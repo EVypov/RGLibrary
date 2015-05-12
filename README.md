@@ -29,8 +29,10 @@ Create new library:
     lb = RGLibrary::Library.new
 
 Yo can load library with JSON-formatted data:
+
 ```lb.fill_with_initial_data(json_file_name)
 ```
+
 Example:
 
     book1 = RGLibrary::Book.new("Gone Girl - 2", "Gillian Flynn")
