@@ -24,18 +24,21 @@ Or install it yourself as:
 
 Begin using library by adding:
 ```require 'rglibrary``` 
-Create new library:
+
+###Create new library:
 
     lb = RGLibrary::Library.new
 
-Yo can load library with JSON-formatted data:
+You can load library with JSON-formatted data:
 ```
 lb.fill_with_initial_data(json_file_name)
 ```
-Example:
+Or fill content adding item-by-item:
 
     book1 = RGLibrary::Book.new("Gone Girl - 2", "Gillian Flynn")
     order = RGLibrary::Order.new("All the President's Men", 'Jihn Palt')
+
+###Saving/Loading
 
 ## Development
 
