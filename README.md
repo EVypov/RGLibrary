@@ -35,11 +35,21 @@ lb.fill_with_initial_data(json_file_name)
 ```
 Or fill content adding item-by-item:
 
-    book1 = RGLibrary::Book.new("Gone Girl - 2", "Gillian Flynn")
+    book = RGLibrary::Book.new("Gone Girl", "Gillian Flynn")
     order = RGLibrary::Order.new("All the President's Men", 'Jihn Palt')
+    lb.add_book(book)
+    lb.add_order(order)
 
 ###Saving/Loading
 
+    lb.save_data
+    lb.load_data
+    
+###Utils
+
+    lb.top_readers #Show number of people who read most popular books
+    lb.who_often_takes_the_book (book_name) #Show person who often takes the book
+    
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `bin/console` for an interactive prompt that will allow you to experiment.
