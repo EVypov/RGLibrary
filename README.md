@@ -22,19 +22,19 @@ Or install it yourself as:
 
 ## Usage
 
-Begin using library by adding require 'rglibrary' into your project
-
+Begin using library by adding:
+```require 'rglibrary``` 
 Create new library:
-lb = RGLibrary::Library.new
 
-Yo can load library with JSON-formatted data
-  lb.fill_with_initial_data(json_file_name)
- or just add content item by item.
+    lb = RGLibrary::Library.new
 
+Yo can load library with JSON-formatted data:
+```lb.fill_with_initial_data(json_file_name)
+```
 Example:
-book1 = RGLibrary::Book.new("Gone Girl - 2", "Gillian Flynn")
-order = RGLibrary::Order.new("All the President's Men", 'Jihn Palt')
 
+    book1 = RGLibrary::Book.new("Gone Girl - 2", "Gillian Flynn")
+    order = RGLibrary::Order.new("All the President's Men", 'Jihn Palt')
 
 ## Development
 
